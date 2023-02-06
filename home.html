@@ -153,32 +153,7 @@
   <!--footer-->
 
   
-<script type="text/javascript">document.addEventListener('DOMContentLoaded', function () {
-  if (!Notification) {
-    alert('Desktop notifications not available in your browser. Try Chromium.'); //if browser is not compatible this will occur
-    return;
-  }
 
-  if (Notification.permission !== "granted")
-    Notification.requestPermission();
-});
-
-function notifyMe() {
-  if (Notification.permission !== "granted")
-    Notification.requestPermission();
-  else {
-    var notification = new Notification('order food from food fab', {
-      icon: './assets/images/logo.jpg',
-      body: "New Notification! Click to Check",
-    });
-
-    notification.onclick = function () {
-      window.open("http://foodfab.github.io/FOOD-Fab/");      
-    };
-
-  }
-
-}</script>
   
 </body>
 </html>
